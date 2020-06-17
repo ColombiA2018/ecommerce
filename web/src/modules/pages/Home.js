@@ -33,7 +33,7 @@ const Home = (props) => (
     }}>
       {/* SEO */}
       <Helmet>
-        <title>Monthly supply of clothes and accessories for Men and Women - Crate</title>
+        <title>Suministro mensual de ropa y accesorios para hombres y mujeres - Crate</title>
       </Helmet>
 
       {/* Content */}
@@ -41,17 +41,17 @@ const Home = (props) => (
         <H1 font="secondary" style={{ textShadow: textLevel1 }}>Crate</H1>
 
         <H4 style={{ textShadow: textLevel1, marginTop: '0.5em' }}>
-          Your monthly subscription of trendy clothes and accessories
+        Su suscripción mensual se ropa y accesorios de moda
         </H4>
 
         {/* Call to action */}
         {
           props.user.isAuthenticated
             ? <Link to={crateRoutes.list.path}>
-                <Button theme="secondary" style={{ marginTop: '1em' }}>Get Subscription</Button>
+                <Button theme="secondary" style={{ marginTop: '1em' }}>Obtenga su sustención</Button>
               </Link>
             : <Link to={userRoutes.signup.path}>
-                <Button theme="secondary" style={{ marginTop: '1em' }}>Get Started</Button>
+                <Button theme="secondary" style={{ marginTop: '1em' }}>Comience aquí</Button>
               </Link>
         }
       </GridCell>
